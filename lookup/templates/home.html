@@ -12,7 +12,12 @@
     <body>
         
         {% block content %}
-        
+        <h1>Hello World</h1>
+
+        {{ api.0 }}<br><br>
+        <p>AQI : {{api.0.AQI}}</p>
+        <p>ReportingArea : {{api.0.ReportingArea}}</p>
+        <p>Name : {{api.0.Category.Name}}</p>
         {% endblock %}
     </body>
     
